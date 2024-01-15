@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="website.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/faed7b9571.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content"> Hello</p>
+        <button id="close">Close</button>
+      </div>
+      <img src="images/thanks.png"/>
+    </div>
+
+  </div>
+  <button id="reduceMotion">Reduce Motion</button>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <!--<img src="images/logo.jpg" class="logo">-->
+        <ul>
+          <li><a id="theme-button">Dark Mode</a></li>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Personal Portfolio Webpage</p>
+        <h1>Hello, my name is Ashish Pal, a </br> <span>computer science</span> major and a </br> <span>mathematics</span> minor from Hunter College</h1>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container active revealable">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/aboutme.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am an ambitious student who strives to do his best and seek opportunities to improve</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+            <p class="tab-links" onclick="opentab('volunteering')">Volunteer Work</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>HTML, JavaScript, CSS, C++, Linux, SQL, R Programming, and Python</li>
+              <li><span>Language Proficiencies</span><br>Punjabi, Hindi, English, French</li>
+              <li><span>Technical Skills</span><br>Google Sheets, Microsoft Word, Powerpoint, Outlook, Excel, and Tableau</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Charles Scaturro & Sons Inc. - Floor Worker</span><br>Performed janitorial duties, maintaining and leveling shelves, stocking excess inventory, and packing out boxes
+                from delivery days<br>Gained teamwork and team building as well as independent thinking skills</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certifications">
+            <ul>
+              <li><span>Google Data Analytics Certificate</span><br>R, SQL, Data Visualization, Spreadsheet Software, Data, Statistic, and Business Analysis</li>
+              <li><span>Intro to Cybersecurity</span><br>Microsoft PowerPoint, Kali Linux, Cybersecurity, Decoding, Encoding, Password Hashing</li>
+              <li><span>Intro to Web Development</span><br>JavaScript, HTML, Cascading Style Sheets</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="volunteering">
+            <ul>
+              <li><span>Science of the Soul Inc. - Construction Worker</span><br>Worked in shoveling, concrete work, landscaping, gluing pipes, painting, etc. <br>Worked in small teams to complete the workload for the day under a strict schedule</li>
+              <li><span>Luv Michael - Promoter</span><br>Creating awareness and raising money for autistic adults to secure job positions and employment<br>Utilizing social media and networking skills to spread awareness effectively</li>
+              <li><span>Youth Leadership Council - Member of the Council</span><br>Worked for the Department Of Education in small groups to raise awareness and actions for sustainable causes<br>Facilitated the Youth Climate Summit attended by numerous schools while creating projects shown at the exhibit
+                as well as creating social media pages for sustainability purposes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="education">
+    <div class="container active revealable">
+      <div class="row2">
+        <div class="education-col-1">
+          <h1 class="education-title">My Education</h1>
+          <p>As a proud and studious honors student from Hunter College, I consistently make the Dean's List each semester from taking these courses</p>
+          <div class="education-titles">
+            <p class="education-links active-link" onclick="opentab2('2022')">2022</p>
+            <p class="education-links" onclick="opentab2('2023')">2023</p>
+            <p class="education-links" onclick="opentab2('2024')">2024</p>
+          </div>
+          <div class="education-contents active-tab" id="2022">
+            <ul>
+              <li><span>Fall 2022 Courses</span><br>* CSCI 12700 - Introduction: Computer Science<br>* ENGL 22000 - Intro: Writing about Literature<br>* MATH 15500 - Calculus 2<br>* STAT 21300 - Introduction to Applied Statistics</li>
+            </ul>
+          </div>
+          <div class="education-contents" id="2023">
+            <ul>
+              <li><span>Spring 2023 Courses</span><br>* CSCI 13500 - Software Analysis and Design 1<br>* CSCI 15000 - Discrete Structures<br>* ECO 10000 - Introduction to Economics<br>* GEOG 15000 - World Religions Global Context</li>
+              <li><span>Fall 2023 Courses</span><br>* CSCI 16000 Computer Architecture 1<br>* CSCI 23500 - Software Analysis and Design 2<br>* GEOG 24100 - Population Geography<br>* MUSHL 10100 - A Thousand Years of Listening<br>* REL 11000 - Nature of Religion</li>
+            </ul>
+          </div>
+          <div class="education-contents" id="2024">
+            <ul>
+              <li><span>Spring 2024 Courses</span><br>* CSCI 26000 Computer Architecture 2<br>* CSCI 33500 - Software Analysis and Design 3<br>* FREN 10100 - Elementary French 1<br>* MATH 16000 - Matrix Algebra<br>* WGS 10000 - Intro Gender/Sex Studies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education-col-2">
+          <img id="lightImg" src="images/hunter.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="project">
+    <div class="container active revealable">
+      <h1 class="sub-title">My Projects</h1>
+      <p>Check out some of my projects showcasing my coding skills</p>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/r.jpeg">
+          <div class="layer">
+            <h3>Bellabeat Case Study</h3>
+            <p>Data Analysis</p>
+            <a href="https://rpubs.com/AshishPal1121/1103476"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/cpp.png">
+          <div class="layer">
+            <h3>C++ Divinity Series RPG</h3>
+            <p>Object Orientated Programming</p>
+            <a href="https://github.com/AshishPal04"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/html.png">
+          <div class="layer">
+            <h3>This Webpage Of Course</h3>
+            <p>Web Design</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="contact">
+    <div class="container active revealable">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>Email: ashishpal20041@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>Phone number: 929-462-2941</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ashish-pal-b61279276/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/Pal-Ashish-Resume.pdf" download class="btn btn2">Download Cv</a>
+        </div>
+        <div class="contact-right">
+          <form action="#">
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+            <button type="sumbit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="feedback">
+    <div class="container active revealable">
+      <h1 class="sub-title">Feedback Form</h1>
+      <p>Feedback is important! Please tell me what I can do to improve this webpage<br><br></p>
+      <form class="feedback" method="get" action="#" onsubmit="return false">
+        <label for="colors"><br>How do you like the colors of the webpage?&nbsp</label>
+        <select name="colors" id="colors">
+          <option value="select">Select</option>
+          <option value="love">Loved it!</option>
+          <option value="fine">They are good</option>
+          <option value="meh">Indifferent</option>
+          <option value="bad">Didn't like it</option>
+          <option value="hate">Hated it!</option>
+        </select>
+        <br><br>
+        <label for="webpage">What did you think of the webpage overall?&nbsp&nbsp</label>
+        <select name="webpage" id="webpage">
+          <option value="select">Select</option>
+          <option value="love">Loved it!</option>
+          <option value="fine">It is good</option>
+          <option value="meh">Indifferent</option>
+          <option value="bad">Didn't like it</option>
+          <option value="hate">Hated it!</option>
+        </select>
+        <br><br>
+        <p>Type any comments you have for my resume overall</p><textarea name="Resume" rows="6" placeholder="Comments"></textarea>
+        <br><br>
+        <p>Please share any comments/recommendations you have for the webpage</p><textarea name="Comments" rows="6" placeholder="Feedback Recommendations"></textarea>
+        <br><br>
+        <input class="btn btn3" type="reset" value="Submit" onclick=toggleModal()>
+      </form>
+
+    </div>
+  </div>
+
+<script src="website.js"></script>
+</body>
+
+</html>
